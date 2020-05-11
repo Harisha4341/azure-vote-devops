@@ -65,7 +65,7 @@
     {
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[parameters('virtualMachineName')]",
-      "apiVersion": "2019-04-01",
+      "apiVersion": "2019-07-01",
       "location": "[parameters('location')]",
       "plan": {
         "name": "ubuntu_1604_edgeruntimeonly",
