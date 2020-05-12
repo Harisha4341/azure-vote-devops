@@ -59,7 +59,7 @@
     "virtualNetworkName": "[concat(parameters('virtualMachineName'), '-vnet')]",
     "vnetId": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
-    "customScriptExtension": "customScriptExtension"
+    "customScriptExtension": "Extention"
   },
   "resources": [
     {
@@ -199,7 +199,7 @@
       "apiVersion": "2018-01-01",
       "location": "[parameters('location')]",
       "properties": {
-            }
+      }
     }
   ],
   "outputs": {
